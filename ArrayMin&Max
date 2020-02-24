@@ -1,6 +1,4 @@
-//Richmond Makafui -10669445
-
-#include <iostream>
+#include<iostream>
 
 using namespace std;
 void findMinAndMax(int arr[], int low, int high, int *max, int *min)
@@ -45,20 +43,23 @@ int main(){
 	int iaArr[500000], iNum, i;
 	int iMax=0,iMin=0;
 	cout<<"Enter the size of the array";
-	cin>> &iNum;
+	cin>>iNum;
 	
 	cout<<"Enter the elements in the array";
 	
 	for(i=0; i<iNum; i++){
-		cin>> &iaArr[i];
+		cin>>iaArr[i];
 		findMinAndMax(iaArr,0,iNum-1, &iMax, &iMin);
 		
 	}
 	
-	cout<<" Maximum = " + <<iMax;
-	cout<<"Minimum = " + <<iMin;
+	cout<<"Maximum = " <<iMax;
+	
+	cout<<"Minimum = " <<iMin;
 	return 0;
 	
 }
+
+
    
    
